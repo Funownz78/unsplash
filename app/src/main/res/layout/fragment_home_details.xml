@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.home.HomeDetailsFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/back"
+            android:text="@string/back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <FrameLayout
+            android:id="@+id/image_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.4"
+            android:layout_marginTop="5dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/back">
+
+            <ImageView
+                android:id="@+id/photo_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/photo"
+                android:scaleType="center"
+                tools:src="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/gradient"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/username_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="56dp"
+                        android:layout_marginBottom="3dp"
+                        android:ellipsize="marquee"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        tools:text="\@alexosesso" />
+
+                    <TextView
+                        android:id="@+id/name_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="56dp"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="marquee"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="Alex Victor" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginStart="10dp"
+                        app:cardCornerRadius="18dp">
+
+                        <ImageView
+                            android:id="@+id/avatar_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:src="@tools:sample/avatars" />
+                    </com.google.android.material.card.MaterialCardView>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/likes_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="52dp"
+                        android:textColor="@color/white"
+                        tools:text="256" />
+
+                    <ImageButton
+                        android:id="@+id/self_like_view"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="3dp"
+                        android:background="#00000000"
+                        android:contentDescription="@string/like"
+                        android:src="@drawable/heart_unfilled" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <Button
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_frame"
+            android:drawableLeft="@drawable/outline_location_on_24"
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginStart="-10dp"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            tools:text="San Francisco, CASan Francisco, CASan Francisco, CA"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textStyle="normal"
+            android:textColor="@android:color/black"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tags"
+            android:layout_marginTop="-7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location"
+            tools:text="#woman #model #nature #rights #womanrights" />
+
+        <LinearLayout
+            android:id="@+id/photo_params"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tags">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/brend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Made with: Canon" />
+
+                <TextView
+                    android:id="@+id/model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Model: EOS 40D" />
+
+                <TextView
+                    android:id="@+id/exposure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Exposure: 0.01s" />
+
+                <TextView
+                    android:id="@+id/aperture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Aperture: 4.970854" />
+
+                <TextView
+                    android:id="@+id/length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Focal Length: 37" />
+
+                <TextView
+                    android:id="@+id/iso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="ISO: 100" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/author_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="About @alexosesso:" />
+
+                <TextView
+                    android:id="@+id/author_descr"
+                    android:maxLines="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Dreamer, creator. Strong man, stronger passion. " />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            app:layout_constraintTop_toBottomOf="@+id/photo_params"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/download_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="-15dp"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            tools:text="@string/download_with_counts"
+            android:textStyle="normal"
+            android:drawableEnd="@drawable/baseline_download_24_day"
+            android:textColor="@android:color/black" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/progress_circular"
+        android:layout_width="match_parent"
+        android:background="#66000000"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="96dp"
+            android:layout_height="96dp"/>
+    </FrameLayout>
+
+</FrameLayout>

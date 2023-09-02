@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Фото</string>
+    <string name="search">поиск</string>
+    <string name="collections">Коллекции</string>
+    <string name="profile">Провиль</string>
+    <string name="logout">Выйти</string>
+    <string name="first_onboarding_string">Создавайте снимки, публикуйте, собирайте аудиторию, получайте фидбек!</string>
+    <string name="second_onboarding_string">Делитесь с друзьями, собирайте коллекции</string>
+    <string name="third_onboarding_string">Загружайте любимые снимки и отслеживайте статистику</string>
+    <string name="login_unboarding_string">ВОЙТИ через unsplash</string>
+    <string name="logout_alert_title">Поддтвердите выход</string>
+    <string name="logout_alert_message">Вы уверены? Локальные данные приложения будут удалены.</string>
+    <string name="action_yes">Да</string>
+    <string name="action_no">Отмена</string>
+    <string name="photo">фото</string>
+    <string name="like">нравится</string>
+    <string name="today_with_api">ЛУЧШЕЕ ЗА СЕГОДНЯ</string>
+    <string name="collections_with_api">КОЛЛЕКЦИИ</string>
+    <string name="today_without_api">ЛУЧШЕЕ ЗА СЕГОДНЯ (сохраненные данные)</string>
+    <string name="collections_without_api">КОЛЛЕКЦИИ (сохраненные данные)</string>
+    <string name="about">Об @%s:</string>
+    <string name="brend">Выполнено на: %s</string>
+    <string name="model">Модель: %s</string>
+    <string name="exposure">Exposure: %s</string>
+    <string name="aperture">Aperture: %s</string>
+    <string name="length">Фокусное растояние: %s</string>
+    <string name="iso">ISO: %s</string>
+    <string name="collection_size">%d ФОТО</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="download"><u>Скачать</u></string>
+    <string name="download_with_counts"><u>Скачать</u> (%d)</string>
+    <string name="failed_download_msg">Скачивание было прервано. Причина: %d</string>
+    <string name="back">Назад</string>
+    <string name="channel_name">download_progress_channel</string>
+    <string name="channel_description">Прогресс скачивания фото</string>
+    <string name="share">Поделиться</string>
+    <string name="liked_photo">Понравившееся фото</string>
+    <string name="profile_padding_string">%s</string>
+    <string name="collection_size_and_username">%d изображений @%s</string>
+    <string name="download_without_counts">Скачать</string>
+    <string name="image_downloaded">Изображение скачано</string>
+    <string name="open">Открыть</string>
+</resources>

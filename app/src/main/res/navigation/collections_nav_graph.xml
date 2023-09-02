@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/collections_nav_graph"
+    app:startDestination="@id/collectionsFragment">
+
+    <fragment
+        android:id="@+id/collectionsFragment"
+        android:name="com.example.imageshering.ui.main.collections.CollectionsFragment"
+        android:label="fragment_collections"
+        tools:layout="@layout/fragment_collections" >
+<!--        <action-->
+<!--            android:id="@+id/action_collectionsFragment_to_collectionDetailFragment"-->
+<!--            app:destination="@id/collectionDetailFragment" />-->
+        <action
+            android:id="@+id/action_collectionsFragment_to_collectionBlankFragment"
+            app:destination="@id/collectionBlankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionBlankFragment"
+        android:name="com.example.imageshering.ui.main.collections.CollectionDetailsFragment"
+        android:label="fragment_collection_blank"
+        tools:layout="@layout/fragment_collection_details" >
+        <argument
+            android:name="collection_id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_collectionBlankFragment_to_homeDetailsFragment2"
+            app:destination="@id/homeDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeDetailsFragment2"
+        android:name="com.example.imageshering.ui.main.home.HomeDetailsFragment"
+        android:label="fragment_home_details"
+        tools:layout="@layout/fragment_home_details" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <!--    <fragment-->
+<!--        android:id="@+id/collectionDetailFragment"-->
+<!--        android:name="com.example.imageshering.ui.main.collections.CollectionDetailFragment"-->
+<!--        android:label="fragment_collection_detail"-->
+<!--        tools:layout="@layout/fragment_collection_detail" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_collectionDetailFragment_to_homeDetailsFragment2"-->
+<!--            app:destination="@id/homeDetailsFragment2" />-->
+<!--        <argument-->
+<!--            android:name="collection_id"-->
+<!--            app:argType="string" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/homeDetailsFragment2"-->
+<!--        android:name="com.example.imageshering.ui.main.home.HomeDetailsFragment"-->
+<!--        android:label="fragment_home_details"-->
+<!--        tools:layout="@layout/fragment_home_details" >-->
+<!--        <argument-->
+<!--            android:name="photoid"-->
+<!--            app:argType="string" />-->
+<!--    </fragment>-->
+</navigation>

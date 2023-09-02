@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name" translatable="false">Imageshering</string>
+    <string name="home">Home</string>
+    <string name="search">search</string>
+    <string name="collections">Collections</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="first_onboarding_string">Take pictures, post, build an audience, get feedback!</string>
+    <string name="second_onboarding_string">Share with friends, collect collections</string>
+    <string name="third_onboarding_string">Upload your favorite shots and track statistics</string>
+    <string name="login_unboarding_string">LOGIN with unsplash</string>
+    <string name="logout_alert_title">Logout confirmation</string>
+    <string name="logout_alert_message">Are you sure you want to logout? All local data will be deleted.</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">Cancel</string>
+    <string name="photo">photo</string>
+    <string name="like">like</string>
+    <string name="today_with_api">TODAY IN TOP</string>
+    <string name="collections_with_api">COLLECTIONS</string>
+    <string name="today_without_api">TODAY IN TOP (cached date, no internet connection)</string>
+    <string name="collections_without_api">COLLECTIONS (cached date, no internet connection)</string>
+    <string name="about">About @%s:</string>
+    <string name="brend">Made with: %s</string>
+    <string name="model">Model: %s</string>
+    <string name="exposure">Exposure: %s</string>
+    <string name="aperture">Aperture: %s</string>
+    <string name="length">Focal Length: %s</string>
+    <string name="iso">ISO: %s</string>
+    <string name="collection_size">%d PHOTO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="download"><u>Download</u></string>
+    <string name="download_with_counts"><u>Download</u> (%d)</string>
+    <string name="failed_download_msg">Failed to download image. Reason: %d</string>
+    <string name="back">Back</string>
+    <string name="channel_name">download_progress_channel</string>
+    <string name="channel_description">Photo download progress</string>
+    <string name="share">Share</string>
+    <string name="liked_photo">Liked photo</string>
+    <string name="profile_padding_string">%s</string>
+    <string name="collection_size_and_username">%d images by @%s</string>
+    <string name="download_without_counts">Download</string>
+    <string name="image_downloaded">Image downloaded</string>
+    <string name="open">Open</string>
+</resources>

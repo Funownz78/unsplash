@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/photo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:contentDescription="@string/photo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:id="@+id/size_text"
+            tools:text="20 photo"
+            android:text="@string/collection_size"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:id="@+id/collection_title"
+            tools:text="LINES IN THE CITY"
+            android:text="@string/collection_size"
+            android:textColor="@color/white"
+            android:textSize="28sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/username_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    tools:text="\@alexosesso" />
+
+            <TextView
+                    android:id="@+id/name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:text="Alex Victor"
+                    android:textSize="12sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="36dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="18dp"
+                android:layout_height="36dp">
+                <ImageView
+                    android:id="@+id/avatar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:src="@tools:sample/avatars" />
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>

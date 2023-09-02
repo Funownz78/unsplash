@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Theme.Unsplash" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+    <style name="Theme.Unsplash" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/unsplash_green</item>
+        <item name="colorPrimaryVariant">@color/unsplash_green</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Customize your theme here. -->
+<!--        <item name="android:windowBackground">@drawable/fragment_background</item>-->
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="tabStyle">@style/Widget.Unsplash.TabLayout</item>
+        <item name="actionBarStyle">@style/Widget.Unsplash.Action</item>
+        <item name="onboarding_photos">@drawable/photos</item>
+        <item name="onboarding_left">@drawable/left_button</item>
+        <item name="onboarding_right">@drawable/right_button</item>
+    </style>
+    <style name="Widget.Unsplash.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">@drawable/tab_layout_border</item>
+        <!-- ... -->
+    </style>
+    <style name="Widget.Unsplash.Action" parent="Widget.MaterialComponents.ActionBar.Primary">
+        <item name="android:background">?attr/colorPrimaryVariant</item>
+        <!-- ... -->
+    </style>
+</resources>
+
+<!--<item name="colorPrimary">@color/purple_500</item>-->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/photo_nav_graph"
+        android:icon="@drawable/outline_home_24"
+        android:contentDescription="@string/home"/>
+<!--        android:title="@string/home"/>-->
+    <item
+        android:id="@+id/collections_nav_graph"
+        android:icon="@drawable/baseline_star_outline_24"
+        android:contentDescription="@string/collections"/>
+<!--        android:title="@string/collections"/>-->
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/outline_person_24"
+        android:contentDescription="@string/profile"/>
+<!--        android:title="@string/profile"/>-->
+</menu>
